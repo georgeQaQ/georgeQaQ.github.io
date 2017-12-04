@@ -16,7 +16,7 @@
     var str = '',
         data = [
             [
-                { title : '第一章 表单常用代码'},
+                { title : 'sugar'},
                 { url : 'e/1/index.html', title : '去除字符串左右的空格' },
                 { url : 'e/2/index.html', title : '验证用户是否输入' },
                 { url : 'e/3/index.html', title : '禁止用户输入' },
@@ -71,15 +71,14 @@
                 { url : 'm/01/index.html', title : '选项卡切换' }
             ],
             [
-                { title : '第六章 时间日期效果'},
-                { url : 'd/03/index.html', title : '全日历' },
-                { url : 'd/04/index.html', title : 'canvas实现小时钟' }
+                { title : 'Part6 轮播图'},
+                { url : 'Carousel/collection/single-ctrl轮播图/demo.html', title : '轮播图1' },
+                { url : 'Carousel/collection/旋转轮播图/demo.html', title : '轮播图2' }
             ],
             [
                 { title : '第七章 其它练习'},
                 { url : 'other/1/index.html', title : '乘法口诀输出' }
-            ],
-            []
+            ]
         ];
     for(var i = 0; i < data.length; i++){
         var items = data[i];
@@ -109,14 +108,14 @@
             for(var i=0; i<h1.length; i++){
                 dl[i].style.display = 'none';
             }
-            if(tmp == this.index && open){
+            if(open){
                 dl[this.index].style.display = 'none';
                 open = false;
             } else {
                 dl[this.index].style.display = 'block';
                 open = true;
             }
-            tmp = this.index;
+            // tmp = this.index;
         }
     }
 </script>
